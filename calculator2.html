@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <meta
+      name="myCalculator"
+      content=" This is a user friendly online tool to make calculations easier and faster"
+    />
+    <meta name="robots" content="noindex" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/calculate2.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon (1).ico" />
+    <script defer src="js/calculate2.js"></script>
+  </head>
+  <body>
+    <div class="wrapper1" id="wrapper">
+      <!-- <img src="myCalculator3.jpg" class="cal"/> -->
+      <!-- <div class="circles"></div>
+                  <div class="circles2"></div> -->
+      <!--  <div class="prism"></div> -->
+      <!--       <img src="MyCalculator.png" class="calculatorbg">  -->
+      <div class="flexbox1">
+        <div class="first-div">
+          <div id="toggle-color" onclick="colorChange()"></div>
+        </div>
+        <div class="second-div"><p id="result-box"></p></div>
+        <div class="third-div"><p id="test"></p></div>
+      </div>
+      <div class="grid-container">
+        <div class="item1 all-box no-fill" id="item1-id">
+          <p class="first-p" id="clear">CLR</p>
+        </div>
+        <div class="item2 all-box no-fill" id="item2-id">
+          <img
+            src="images/square-root.png"
+            alt="square-root"
+            id="square-root"
+            class="operator"
+          />
+        </div>
+        <div class="item3 all-box no-fill" id="item3-id">
+          <img
+            src="images/multiply.png"
+            alt="multiply"
+            id="multiply"
+            class="operator"
+          />
+        </div>
+        <div class="item4 all-box no-fill">
+          <img src="images/cancel.png" alt="cancel" id="cancel" class="operator" />
+        </div>
+        <div class="item5 item-fill all-box"><p id="btn1">1</p></div>
+        <div class="item6 all-box no-fill"><p id="btn2">2</p></div>
+        <div class="item7 all-box no-fill" id="btn3"><p>3</p></div>
+        <div class="item8 all-box no-fill">
+          <img src="images/minus.png" alt="minus" id="minus" class="operator" />
+        </div>
+        <div class="item9 all-box no-fill" id="btn4"><p>4</p></div>
+        <div class="item10 item-fill all-box" id="btn5"><p>5</p></div>
+        <div class="item11 all-box no-fill" id="btn6"><p>6</p></div>
+        <div class="item12 all-box no-fill">
+          <img src="images/plus.png" alt="plus" id="plus" class="operator" />
+        </div>
+        <div class="item13 all-box no-fill" id="btn7"><p>7</p></div>
+        <div class="item14 all-box no-fill" id="btn8"><p>8</p></div>
+        <div class="item15 all-box item-fill" id="btn9"><p>9</p></div>
+        <div class="item16 all-box no-fill" id="btn0"><p>0</p></div>
+        <div class="item17 all-box no-fill">
+          <img
+            src="images/decimal-point.png"
+            alt="decimal-point"
+            id="btn."
+            class="operator"
+          />
+        </div>
+        <div class="item18 all-box no-fill">
+          <img src="images/divide.png" alt="divide" id="divide" class="operator" />
+        </div>
+        <!--  <div class="item19"></div> -->
+        <div class="item19 item-fill">
+          <img src="images/equal-to.png" alt="equal-to" id="equal-to" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

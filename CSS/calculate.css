@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  color: white;
+}
+.first-div {
+  display: flex;
+  background: linear-gradient(150deg, rgb(118, 62, 149), rgb(197, 98, 98));
+  width: 100vw;
+  height: 100vh;
+}
+#process-img {
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  width: 35vw;
+  height: auto;
+  opacity: 0.5;
+}
+.first-p {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 5vw;
+  font-family: arial;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(80, end);
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    width: 450px;
+    opacity: 1;
+  }
+}
+
+.second-p {
+  position: absolute;
+  top: 37%;
+  left: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10vw;
+  animation: typing 4.5s;
+}
+
+#process-img2 {
+  position: absolute;
+  bottom: 25%;
+  right: 0px;
+  opacity: 0.5;
+  width: 35vw;
+  height: auto;
+}
+
+.loader {
+  margin-top: 80vh;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.loader .dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50px;
+  animation: bounce 1s infinite alternate;
+}
+.loader .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader .dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes bounce {
+  to {
+    opacity: 0.3;
+    transform: translateY(-10px);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #process-img {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    width: 20vw;
+    height: auto;
+    opacity: 0.5;
+  }
+
+  #process-img2 {
+    position: absolute;
+    bottom: 13%;
+    right: 0px;
+    opacity: 0.5;
+    width: 20vw;
+    height: auto;
+  }
+
+  .first-p {
+    position: absolute;
+    top: 30%;
+    left: 45vw;
+    font-size: 2vw;
+  }
+  .second-p {
+    position: absolute;
+    top: 38%;
+    left: 31vw;
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .first-p {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 3vw;
+  }
+  .second-p {
+    position: absolute;
+    top: 39%;
+    left: 30%;
+    font-size: 6vw;
+  }
+  #process-img {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    width: 20vw;
+    height: auto;
+    opacity: 0.5;
+  }
+
+  #process-img2 {
+    position: absolute;
+    bottom: 13%;
+    right: 0px;
+    opacity: 0.5;
+    width: 20vw;
+    height: auto;
+  }
+}
